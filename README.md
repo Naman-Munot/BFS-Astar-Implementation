@@ -35,7 +35,7 @@ Next N lines: Two positive 32-bit integers separated by one space character, for
 
 Next H lines: W 32-bit integer numbers separated by any numbers of spaces for the elevation (Z) values of each of the W cells in each row of the map.
 
-For example:
+'''For example:
 A*
 8 6
 4 4
@@ -48,7 +48,7 @@ A*
 0 63 64 57 45 67 68 0
 0 58 64 57 45 68 67 0
 0 60 61 67 65 66 69 0
-0  0  0  0  0  0  0 0
+0  0  0  0  0  0  0 0'''
 
 In this example, on a 8-cells-wide by 6-cells-high grid, we land at location (4, 4), where (0, 0) is the North West corner of the map. The maximum elevation change
 that the rover can handle is 7 (in arbitrary units which are the same as for the Z values of the
