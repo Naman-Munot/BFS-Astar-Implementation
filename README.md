@@ -12,28 +12,28 @@ To find the solution I have used the following algorithms:
 - Uniform-cost search (UCS)
 - A* search (A*)
 
-##Input: The file input.txt in the current directory of your program will be formatted as follows:
+### Input: The file input.txt in the current directory of your program will be formatted as follows:
 
-###First line: Instruction of which algorithm to use, as a string: BFS, UCS or A*
+### First line: Instruction of which algorithm to use, as a string: BFS, UCS or A*
 
-###Second line: Two strictly positive 32-bit integers separated by one space character, for
+### Second line: Two strictly positive 32-bit integers separated by one space character, for
 “W H” the number of columns (width) and rows (height), in cells, of the map
 
-###Third line: Two positive 32-bit integers separated by one space character, for
+### Third line: Two positive 32-bit integers separated by one space character, for
 “X Y” the coordinates (in cells) of the landing site. 0 £ X £ W-1 and 0 £ Y £ H-1
 (that is, we use 0-based indexing into the map; X increases when moving East and
 Y increases when moving South; (0,0) is the North West corner of the map)
 
-###Fourth line: Positive 32-bit integer number for the maximum difference in elevation between
+### Fourth line: Positive 32-bit integer number for the maximum difference in elevation between
 two adjacent cells which the rover can drive over. The difference in Z between two adjacent cells must be smaller than or equal (£ )
 to this value for the rover to be able to travel from one cell to the other.
 
-###Fifth line: Strictly positive 32-bit integer N, the number of target sites.
+### Fifth line: Strictly positive 32-bit integer N, the number of target sites.
 
-###Next N lines: Two positive 32-bit integers separated by one space character, for “X Y” the coordinates (in cells) of each target site. 0 £ X £ W-1 and 0 £ Y £ H-1
+### Next N lines: Two positive 32-bit integers separated by one space character, for “X Y” the coordinates (in cells) of each target site. 0 £ X £ W-1 and 0 £ Y £ H-1
 (that is, we again use 0-based indexing into the map).
 
-###Next H lines: W 32-bit integer numbers separated by any numbers of spaces for the elevation (Z) values of each of the W cells in each row of the map.
+### Next H lines: W 32-bit integer numbers separated by any numbers of spaces for the elevation (Z) values of each of the W cells in each row of the map.
 ```
 For example:
 A*
@@ -56,7 +56,7 @@ map). We want to visit 2 targets, at locations (1, 1) and (6, 3).
 The Z elevation map is then given as six lines in the file, with eight Z values in each line,
 separated by spaces.
 
-##Output: The file output.txt which your program creates in the current directory should be formatted as follows:
+### Output: The file output.txt which your program creates in the current directory should be formatted as follows:
 N lines: Report the paths in the same order as the targets were given in the input.txt file
 
 Write out one line per target. Each line should contain a sequence of X,Y pairs
